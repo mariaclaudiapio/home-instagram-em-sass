@@ -13,17 +13,19 @@
   display: flex;
   flex-direction: row;
   margin-top: 30px;
-  text-align: center;
 }
 #main-container #banner-container,
 #main-container #form-container {
   flex: 1 1 0;
   width: 50%;
+  text-align: center;
 }
-#main-container #banner-container {
+#main-container #banner-container #banner-container,
+#main-container #form-container #banner-container {
   text-align: right;
 }
-#main-container #banner-container img {
+#main-container #banner-container #banner-container img,
+#main-container #form-container #banner-container img {
   margin-right: -15px;
 }
 /* formulário de login */
@@ -176,4 +178,29 @@ footer #copyright {
   text-transform: uppercase;
   color: #8e8e8e;
   margin-top: 10px;
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  #banner-container {
+    display: none;
+  }
+  #main-container,
+#form-box {
+    margin-top: 0;
+  }
+  #form-container,
+#form-box,
+#register-container,
+#get-app-container {
+    width: 100%;
+    border: none;
+  }
+  footer {
+    width: 90%;
+    text-align: center;
+  }
+  footer #footer-links li {
+    margin-bottom: 10px;
+  }
 }/*# sourceMappingURL=styles.css.map */
