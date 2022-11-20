@@ -149,4 +149,31 @@
 #get-app-container a img {
   widows: 136px;
   height: 40px;
+}
+
+/* rodapé */ 
+footer {
+  text-align: left;
+  width: 1000px;
+  margin: 50px auto;
+}
+footer nav #footer-links {
+  list-style: none;
+}
+footer nav #footer-links li {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+footer nav #footer-links li a {
+  text-decoration: none;
+  color: #00376b;
+  font-size: 12px;
+  font-weight: bold;
+}
+footer #copyright {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #8e8e8e;
+  margin-top: 10px;
 }/*# sourceMappingURL=styles.css.map */
